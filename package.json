@@ -1,0 +1,14 @@
+{
+  "name": "hauretouzet_jerome_4_ohmyfood_032025",
+  "version": "1.0.0",
+  "description": "Création d'un site de gastronomie en MobileFirst avec Sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/style.scss css/style.css"
+  },
+  "author": "Jérôme Haure-Touzet",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.85.1"
+  }
+}

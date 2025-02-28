@@ -1,0 +1,21 @@
+// variables et mixins
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// styles de base
+@import "base/animation";
+@import "base/base";
+@import "base/reset";
+@import "base/typography";
+
+// composants
+@import "components/button";
+@import "components/heart";
+
+// structure du site
+@import "layout/header";
+@import "layout/footer";
+
+// les pages
+@import "pages/index";
+@import "pages/restaurant"; 
