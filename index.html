@@ -23,14 +23,199 @@
 
   <body>
     <div class="main-container">
-      <!-- header -->
-      <header></header>
+      <!-- header contient le logo -->
+      <header>
+        <img
+          src="images/logo/ohmyfood.svg"
+          alt="Ohmyfood, réservation de menus d'exception"
+        />
+      </header>
 
-      <!-- main -->
-      <main></main>
+      <!-- main contient main-search, main-step et main-restaurant -->
+      <main>
+        <!-- =====  main-search  ===== -->
+        <!-- main-search contient search-bar et search-container -->
+        <!-- search-bar contient l'icone map et l'input txtSearch -->
+        <!-- search-container contient les titres h1 et h2 et le bouton btnSearch -->
 
-      <!-- footer -->
-      <footer></footer>
+        <div class="main-search">
+          <div class="search-bar bg-greyLight">
+            <i class="fas fa-map-marker-alt fa-lg"></i>
+            <input
+              type="text"
+              id="txtSearch"
+              class="bd-greyLight bg-greyLight"
+              name="search"
+              value="Paris, Belleville"
+            />
+          </div>
+          <div class="search-container">
+            <h1>Réserver le menu qui vous convient</h1>
+            <h2>
+              Décrouvrez des restaurants d'exception, séléctionnés par nos
+              soins.
+            </h2>
+            <button id="btnSearch" class="colorGradient">
+              Explorer nos restaurants
+            </button>
+          </div>
+        </div>
+
+        <!-- =====  main-step  ===== -->
+        <!-- main-step contient le titre et une liste -->
+        <!-- liste contient le numéro d'étape, une icone et un pararaphe -->
+
+        <div id="main-step">
+          <h2>Fonctionnement</h2>
+          <ul>
+            <li>
+              <div class="step-icon grey">1</div>
+              <i class="fas fa-mobile-alt grey"></i>
+              <span>Choisissez un restaurant</span>
+            </li>
+            <li>
+              <div class="step-icon grey">2</div>
+              <i class="fas fa-list-ul grey"></i>
+              <span>Composez votre menu</span>
+            </li>
+            <li>
+              <div class="step-icon primary-color">3</div>
+              <i class="fas fa-store primary-color"></i>
+              <span>Dégustez au restaurant</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =====  section main-restaurant  ===== -->
+        <!-- main-restaurant contient le titre et 4 articles -->
+        <!-- article contient un lien -->
+        <!-- lien contient imgContainer, card-content -->
+        <!-- imgContainer contient l'image du restaurant et l'étiquette Nouveau  -->
+        <!-- card-content contient flexContainer et le coeur -->
+        <!-- flexContainer contient un titre h3 et un paragraphe -->
+        <!-- coeur contient deux coeurs (défaut et survol) -->
+
+        <section id="main-restaurant">
+          <h2>Restaurants</h2>
+          <div id="flexContainer-card">
+            <article class="restaurant-card">
+              <a href="restaurant-laPaletteDuGout.html">
+                <div class="imgContainer">
+                  <img
+                    src="images/restaurants/la-palette-du-gout.jpg"
+                    alt="La palette du goût"
+                  />
+                  <div class="new">Nouveau</div>
+                </div>
+                <div class="cardContent">
+                  <div class="flexContainer">
+                    <h3>La palette du goût</h3>
+                    <span>Ménilmontant</span>
+                  </div>
+                  <div class="heart">
+                    <span class="icon">
+                      <i class="fas fa-heart fa-1x icon-hover"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="far fa-heart fa-1x icon-default"> </i>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="restaurant-card">
+              <a href="restaurant-laNoteEnchantee.html">
+                <div class="imgContainer">
+                  <img
+                    src="images/restaurants/la-note-enchantee.jpg"
+                    alt="La note enchantée"
+                  />
+                  <div class="new">Nouveau</div>
+                </div>
+                <div class="cardContent">
+                  <div class="flexContainer">
+                    <h3>La note enchantée</h3>
+                    <span>Charonne</span>
+                  </div>
+                  <div class="heart">
+                    <span class="icon">
+                      <i class="fas fa-heart fa-1x icon-hover"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="far fa-heart fa-1x icon-default"></i>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="restaurant-card">
+              <a href="restaurant-aLaFrancaise.html">
+                <div class="imgContainer">
+                  <img
+                    src="images/restaurants/a-la-francaise.jpg"
+                    alt="À la Française"
+                  />
+                </div>
+                <div class="cardContent">
+                  <div class="flexContainer">
+                    <h3>À la française</h3>
+                    <span>Cité Rouge</span>
+                  </div>
+                  <div class="heart">
+                    <span class="icon">
+                      <i class="fas fa-heart fa-1x icon-hover"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="far fa-heart fa-1x icon-default"> </i>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="restaurant-card">
+              <a href="restaurant-leDeliceDesSens.html">
+                <div class="imgContainer">
+                  <img
+                    src="images/restaurants/le-delice-des-sens.jpg"
+                    alt="Le délice des sens"
+                  />
+                </div>
+                <div class="cardContent">
+                  <div class="flexContainer">
+                    <h3>Le délice des sens</h3>
+                    <span>Folie-Méricourt</span>
+                  </div>
+                  <div class="heart">
+                    <span class="icon">
+                      <i class="fas fa-heart fa-1x icon-hover"></i>
+                    </span>
+                    <span class="icon">
+                      <i class="far fa-heart fa-1x icon-default"></i>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer contient un titre et une liste -->
+      <footer>
+        <h3>ohmyfood</h3>
+        <ul>
+          <li>
+            <i class="fas fa-utensils"></i>
+            <a href="#">Proposer un restaurant</a>
+          </li>
+          <li>
+            <i class="fas fa-hands-helping"></i>
+            <a href="#">Devenir partenaire</a>
+          </li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
