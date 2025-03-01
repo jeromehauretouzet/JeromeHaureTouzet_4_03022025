@@ -1,0 +1,51 @@
+/* animation 2: progressive du menu en fondu avec un léger décalage dans le temps */
+#main-menu {
+  li {
+    animation: fadeIn 0.5s linear;
+    animation-fill-mode: both;
+
+    &:nth-child(1) {
+      animation-delay: 0.25s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.75s;
+    }
+
+    &:nth-child(4) {
+      animation-delay: 1s;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* animation 3: progressive du check qui devra coulisser de la droite vers la gauche */
+
+#main-menu {
+  a {
+    .cardMenu {
+      /* check de validation (vert)*/
+      .check {
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}
