@@ -20,7 +20,7 @@ margin: 0px;
 input{
   border:0px;
 
-  :focus {
+  &:focus {
     outline: none;
   }
 }
