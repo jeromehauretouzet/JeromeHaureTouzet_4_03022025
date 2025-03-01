@@ -1,0 +1,37 @@
+.heart {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    .icon-default {
+      transition: all 0.7s ease-in;
+      opacity: 1;
+      font-size: 24px; // Taille de base de l'icône
+    }
+
+    .icon-hover {
+      display: initial;
+      transition: all 0.6s ease-in;
+      background: linear-gradient(50deg, $secondary-color, $primary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0;
+      font-size: 0.05rem; // Taille initiale invisible
+    }
+  }
+
+  &:hover {
+    .icon {
+      .icon-default {
+        opacity: 0;
+      }
+
+      .icon-hover {
+        opacity: 1;
+        font-size: 24px; // Taille au survol
+      }
+    }
+  }
+}
