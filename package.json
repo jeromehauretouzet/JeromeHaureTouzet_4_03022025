@@ -10,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.85.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeromehauretouzet/JeromeHaureTouzet_4_03022025.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeromehauretouzet/JeromeHaureTouzet_4_03022025/issues"
+  },
+  "homepage": "https://github.com/jeromehauretouzet/JeromeHaureTouzet_4_03022025#readme"
 }
