@@ -529,4 +529,11 @@ footer ul li a {
   width: 20%;
 }
 
+/* main-order (emplacement du bouton commander)*/
+#main-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */
