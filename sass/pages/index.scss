@@ -28,6 +28,7 @@
   }
 }
 
+
 /* section de recherche d'un restaurant */
 
 .search-container {
@@ -53,6 +54,71 @@
     padding-left: 30px;
     padding-right: 20px;
     font-size: 18px;
+  }
+}
+
+
+/* section Fonctionnement avec trois étapes  */
+
+#main-step {
+  @include flex-column;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 20px;
+
+  // titre
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0px;
+    padding-bottom: 26px;
+  }
+
+  ul {
+    margin: 0px;
+    margin-left: 12.5px;
+    text-align: center;
+
+    // carte des étapes
+    li { 
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 20px;
+      margin-bottom: 25px;
+      margin-right: 24px;
+      padding-left: 28px;
+      padding-right: 22px;
+      font-size: 16px;
+      font-weight: 600;
+      height: 72px;
+      max-width: 270px;
+      box-shadow: 3px 5px 5px $grey-light;
+      position: relative;
+      background-color: $grey-superlight;
+
+      // icône et numéro de l'étape
+      .step-icon { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        background-color: $primary-color;
+        position: absolute;
+        left: -12px;
+      }
+
+      i {
+        padding-left: 10px;
+        padding-right: 25px;
+        font-size: 17px;
+      }
+    }
   }
 }
 

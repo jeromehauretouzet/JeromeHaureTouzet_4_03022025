@@ -104,6 +104,62 @@ header i {
   font-size: 18px;
 }
 
+/* section Fonctionnement avec trois étapes  */
+#main-step {
+  display: flex;
+  flex-direction: column;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 20px;
+}
+#main-step h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0px;
+  padding-bottom: 26px;
+}
+#main-step ul {
+  margin: 0px;
+  margin-left: 12.5px;
+  text-align: center;
+}
+#main-step ul li {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  margin-right: 24px;
+  padding-left: 28px;
+  padding-right: 22px;
+  font-size: 16px;
+  font-weight: 600;
+  height: 72px;
+  max-width: 270px;
+  box-shadow: 3px 5px 5px #EAEAEA;
+  position: relative;
+  background-color: #F3F3F3;
+}
+#main-step ul li .step-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  position: absolute;
+  left: -12px;
+}
+#main-step ul li i {
+  padding-left: 10px;
+  padding-right: 25px;
+  font-size: 17px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Tablet Styles */
