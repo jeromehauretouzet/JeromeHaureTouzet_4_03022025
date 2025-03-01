@@ -1,3 +1,23 @@
-
+@charset "UTF-8";
+/* HEADER */
+/* logo */
+/* icône flèche retour en arrière */
+/* ===== header ===== */
+header {
+  display: flex;
+  align-items: center;
+  padding-left: 17px;
+  /* logo */
+  /* lien retour */
+}
+header img {
+  margin: 0 auto;
+  width: 160px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+header i {
+  font-size: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */

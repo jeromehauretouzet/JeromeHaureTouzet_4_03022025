@@ -1,0 +1,19 @@
+/* ===== header ===== */
+
+header {
+  @include flex-vertical-center;
+  padding-left: 17px;
+
+  /* logo */
+  img {
+    margin: 0 auto;
+    width: $logo-width;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  /* lien retour */
+  i {
+    font-size: $back-icon-size;
+  }
+}
