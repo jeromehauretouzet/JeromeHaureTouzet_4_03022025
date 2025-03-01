@@ -160,3 +160,34 @@
   justify-content: center;
   align-items: center;
 }
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  #main-menu {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+}
+
+/* Desktop more than 1440px */
+@media (min-width: 1440px) {
+  .main-container {
+    @include main-container-desktop-large;
+  }
+
+  #main-menu {
+    padding-left: 210px;
+    padding-right: 210px;
+  }
+}

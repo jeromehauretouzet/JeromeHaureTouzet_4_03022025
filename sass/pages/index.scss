@@ -198,8 +198,7 @@
 
   /****** flexContainer *******/
   .flexContainer {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
   }
 
   h3 {
@@ -253,7 +252,6 @@
 /* Desktop more than 1440px */
 @media (min-width: $breakpoint-desktop-large) {
   .main-container {
-    max-width: 1440px;
-    padding: 0 50px;
+    @include main-container-desktop-large;
   }
 }
