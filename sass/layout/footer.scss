@@ -1,0 +1,71 @@
+/* ===== footer ===== */
+footer {
+  background-color: $grey-dark;
+  padding-bottom: 20px;
+  padding-left: 25px;
+
+  h3 {
+    font-family: $font-shrikhand;
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  ul {
+    @include flex-column;
+    margin: 0px;
+
+    li {
+      padding-top: 4px;
+      padding-bottom: 4px;
+
+      i {
+        font-size: 13px;
+        color: white;
+        padding-right: 5px;
+      }
+
+      a {
+        color: white;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/****** Media queries footer ***********/
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 57px;
+  }
+
+  footer ul {
+    flex-direction: row;
+  }
+
+  footer ul li {
+    margin-right: 19px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  footer h3 {
+    margin-left: 15px;
+    margin-right: 25px;
+  }
+}
+
+/* Desktop Styles  */
+@media (min-width: 1024px) {
+  footer ul li {
+    margin-right: 25px;
+  }
+}
