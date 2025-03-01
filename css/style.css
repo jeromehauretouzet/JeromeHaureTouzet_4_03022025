@@ -249,6 +249,20 @@ header i {
   .search-container {
     margin-top: 0px;
   }
+  /* carte des restaurants */
+  #main-restaurant {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #flexContainer-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  #main-restaurant .restaurant-card {
+    width: 48%;
+  }
 }
 /* Desktop more than 1440px */
 @media (min-width: 1440px) {
