@@ -606,6 +606,7 @@ footer ul li a {
 }
 #main-menu a .cardMenu .menu {
   width: 100%;
+  transition: all 0.5s ease-in-out;
   /* titre du plat */
   /* flexcontainer (description et prix) */
 }
@@ -615,6 +616,9 @@ footer ul li a {
   padding-top: 13.5px;
   padding-bottom: 4px;
   padding-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #main-menu a .cardMenu .menu .flexcontainer {
   display: flex;
@@ -647,12 +651,16 @@ footer ul li a {
   max-width: 90px;
   height: 68px;
   transition: all 0.5s ease-in-out;
+  flex-shrink: 0;
   /* icone du check de validation */
 }
 #main-menu a .cardMenu .check i {
   margin: auto;
   font-size: 22px;
   padding-top: 5px;
+}
+#main-menu a:hover .cardMenu .menu {
+  width: 80%;
 }
 #main-menu a:hover .cardMenu .check {
   width: 20%;
@@ -668,6 +676,11 @@ footer ul li a {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Tablet Styles */
+@media (min-width: 768px) {
+  #main-menu a:hover .cardMenu .menu {
+    width: 100%;
+  }
+}
 /* Desktop Styles */
 @media (min-width: 1024px) {
   #main-menu {

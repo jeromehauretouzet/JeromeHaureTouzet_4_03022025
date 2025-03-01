@@ -87,6 +87,8 @@
 
       .menu {
         width: 100%;
+        // margin-right: auto;
+        transition: all 0.5s ease-in-out;
 
         /* titre du plat */
         h3 {
@@ -95,6 +97,9 @@
           padding-top: 13.5px;
           padding-bottom: 4px;
           padding-left: 10px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         /* flexcontainer (description et prix) */
@@ -134,6 +139,7 @@
         max-width: 90px;
         height: 68px;
         transition: all 0.5s ease-in-out;
+        flex-shrink: 0;
 
         /* icone du check de validation */
         i {
@@ -145,6 +151,9 @@
     }
 
     &:hover {
+      .cardMenu .menu {
+        width: 80%;  // Augmente la largeur du menu au survol
+      }
       .cardMenu .check {
         width: 20%;
       }
@@ -169,7 +178,9 @@
 
 /* Tablet Styles */
 @media (min-width: $breakpoint-tablet) {
-
+  #main-menu a:hover .cardMenu .menu {
+    width: 100%;
+  }
 }
 
 /* Desktop Styles */
