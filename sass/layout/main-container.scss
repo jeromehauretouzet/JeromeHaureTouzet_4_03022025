@@ -5,3 +5,10 @@
   box-sizing: border-box;
   background-color: #ffffff; /* Blanc par défaut pour mobile */
 }
+
+/* Desktop more than 1440px */
+@media (min-width: $breakpoint-desktop-large) {
+  .main-container {
+    @include main-container-desktop-large;
+  }
+}

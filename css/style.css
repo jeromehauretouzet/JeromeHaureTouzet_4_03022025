@@ -234,6 +234,13 @@ input:focus {
   background-color: #ffffff; /* Blanc par défaut pour mobile */
 }
 
+/* Desktop more than 1440px */
+@media (min-width: 1440px) {
+  .main-container {
+    max-width: 1440px;
+    padding: 0 50px;
+  }
+}
 /* ===== header ===== */
 header {
   display: flex;
@@ -520,13 +527,6 @@ footer ul li a {
     width: 48%;
   }
 }
-/* Desktop more than 1440px */
-@media (min-width: 1440px) {
-  .main-container {
-    max-width: 1440px;
-    padding: 0 50px;
-  }
-}
 /* ===== main-photo     ===== */
 /* emplacement de la photo du restaurant */
 .main-photo {
@@ -677,10 +677,6 @@ footer ul li a {
 }
 /* Desktop more than 1440px */
 @media (min-width: 1440px) {
-  .main-container {
-    max-width: 1440px;
-    padding: 0 50px;
-  }
   #main-menu {
     padding-left: 210px;
     padding-right: 210px;
