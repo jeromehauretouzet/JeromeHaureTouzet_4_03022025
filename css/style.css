@@ -167,6 +167,9 @@ header i {
   .search-bar {
     box-shadow: none;
   }
+  .search-container {
+    margin-top: 0px;
+  }
 }
 /* Desktop more than 1440px */
 @media (min-width: 1440px) {
