@@ -5,6 +5,90 @@
 /* logo */
 /* icône flèche retour en arrière */
 /* RESTAURANT */
+/* animation 1: preload de 1 à 3sec quand on arrive sur la page d'accueil, couvrir l'intégralité de l'écran */
+body .preload {
+  animation: splash-screen 3s, fade-in 1s 2s;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 1;
+}
+body .preload .loadingSpinner {
+  width: 142px;
+  height: 40px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: contrast(20);
+}
+body .preload .loadingSpinner .dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  filter: blur(4px);
+  background: #9356DC;
+  border-radius: 50%;
+  animation-name: anim-dot;
+  animation-duration: 1.5s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+body .preload .loadingSpinner .dots {
+  margin-top: 12px;
+  margin-left: 31px;
+  animation-name: anim-dots;
+  animation-duration: 1.5s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+body .preload .loadingSpinner .dots span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  filter: blur(4px);
+  background: #9356DC;
+  border-radius: 50%;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes splash-screen {
+  50% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes anim-dot {
+  50% {
+    transform: translateX(96px);
+  }
+}
+@keyframes anim-dots {
+  50% {
+    transform: translateX(-31px);
+  }
+}
 /* animation 2: progressive du menu en fondu avec un léger décalage dans le temps */
 #main-menu li {
   animation: fadeIn 0.5s linear;
