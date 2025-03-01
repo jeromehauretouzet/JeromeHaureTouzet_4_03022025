@@ -168,12 +168,12 @@
 /****** Media queries ***********/
 
 /* Tablet Styles */
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-tablet) {
 
 }
 
 /* Desktop Styles */
-@media (min-width: 1024px) {
+@media (min-width: $breakpoint-desktop) {
   #main-menu {
     padding-left: 160px;
     padding-right: 160px;
@@ -181,7 +181,7 @@
 }
 
 /* Desktop more than 1440px */
-@media (min-width: 1440px) {
+@media (min-width: $breakpoint-desktop-large) {
   .main-container {
     @include main-container-desktop-large;
   }
