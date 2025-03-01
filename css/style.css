@@ -36,8 +36,43 @@ input:focus {
   outline: none;
 }
 
+.btn, #btnOrder, #btnSearch {
+  border: none;
+  cursor: pointer;
+}
+
 * {
   font-family: "Roboto", sans-serif;
+}
+
+.btn, #btnOrder, #btnSearch {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  border-radius: 25px;
+  background: linear-gradient(-8deg, #9356DC, #FF79DA);
+  transition: all ease-in 0.3s;
+}
+.btn:hover, #btnOrder:hover, #btnSearch:hover {
+  opacity: 0.85;
+  box-shadow: 1px 2px 5px #7E7E7E;
+}
+.btn:focus, #btnOrder:focus, #btnSearch:focus {
+  outline: none;
+}
+
+/* bouton explorer et commander */
+#btnSearch {
+  width: 215px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#btnOrder {
+  width: 180px;
+  height: 50px;
+  margin-bottom: 40px;
 }
 
 /* ===== header ===== */
