@@ -1,0 +1,49 @@
+/* ===== main-search ===== */
+
+/* barre de recherche des restaurants */
+
+.search-bar {
+  @include flex-center;
+
+  box-shadow: inset 0 5px 6px -5px #b8b7b7,
+  0 5px 5px rgba(0, 0, 0, 0.2); // Ombre intérieure et extérieure en bas
+
+  height: 50px;
+  width: 100%;
+
+  // Icone map
+  i { 
+    font-size: 16px;
+    padding-left: 45px;
+  }
+  
+  // Champs de recherche
+  input { 
+    font-weight: 600;
+    font-size: 16px;
+    max-width: 145px;
+    height: 19px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .search-bar {
+    box-shadow: none;
+  }
+}
+
+/* Desktop more than 1440px */
+@media (min-width: 1440px) {
+  .main-container {
+    max-width: 1440px;
+    padding: 0 50px;
+  }
+}
