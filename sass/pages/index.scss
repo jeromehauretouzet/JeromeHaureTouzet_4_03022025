@@ -222,8 +222,8 @@
 
 /****** Media queries ***********/
 
-/* Tablet Styles */
-@media (min-width: 768px) {
+/* Tablet Styles 768px*/
+@media (min-width: $breakpoint-tablet) {
   .search-bar {
     box-shadow: none;
   }
@@ -251,7 +251,7 @@
 }
 
 /* Desktop more than 1440px */
-@media (min-width: 1440px) {
+@media (min-width: $breakpoint-desktop-large) {
   .main-container {
     max-width: 1440px;
     padding: 0 50px;

@@ -4,6 +4,7 @@
 /* HEADER */
 /* logo */
 /* icône flèche retour en arrière */
+/* RESTAURANT */
 /* search-bar */
 .bg-greyLight {
   background-color: #EAEAEA;
@@ -367,7 +368,7 @@ footer ul li a {
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
-/* Tablet Styles */
+/* Tablet Styles 768px*/
 @media (min-width: 768px) {
   .search-bar {
     box-shadow: none;
@@ -396,6 +397,32 @@ footer ul li a {
     max-width: 1440px;
     padding: 0 50px;
   }
+}
+/* ===== main-photo     ===== */
+/* emplacement de la photo du restaurant */
+.main-photo {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 44%;
+  background-repeat: no-repeat;
+}
+
+/* photo du restaurant */
+#img-aLaFrancaise {
+  background-image: url("../images/restaurants/a-la-francaise.jpg");
+}
+
+#img-laNoteEnchantee {
+  background-image: url("../images/restaurants/la-note-enchantee.jpg");
+}
+
+#img-laPaletteDuGout {
+  background-image: url("../images/restaurants/la-palette-du-gout.jpg");
+}
+
+#img-leDeliceDesSens {
+  background-image: url("../images/restaurants/le-delice-des-sens.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */

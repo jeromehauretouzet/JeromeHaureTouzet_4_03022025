@@ -1,0 +1,27 @@
+/* ===== main-photo     ===== */
+
+/* emplacement de la photo du restaurant */
+.main-photo {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 44%;
+  background-repeat: no-repeat;
+}
+
+/* photo du restaurant */
+#img-aLaFrancaise {
+  background-image: url($img-aLaFrancaise);
+}
+
+#img-laNoteEnchantee {
+  background-image: url($img-laNoteEnchantee);
+}
+
+#img-laPaletteDuGout {
+  background-image: url($img-laPaletteDuGout);
+}
+
+#img-leDeliceDesSens {
+  background-image: url($img-leDeliceDesSens);
+}

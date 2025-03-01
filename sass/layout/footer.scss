@@ -39,7 +39,7 @@ footer {
 /****** Media queries footer ***********/
 
 /* Tablet Styles */
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-tablet) {
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -64,7 +64,7 @@ footer {
 }
 
 /* Desktop Styles  */
-@media (min-width: 1024px) {
+@media (min-width: $breakpoint-desktop) {
   footer ul li {
     margin-right: 25px;
   }

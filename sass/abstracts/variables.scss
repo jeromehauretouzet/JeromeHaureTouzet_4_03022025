@@ -15,6 +15,12 @@ $grey-light: #EAEAEA;
 $grey-superlight: #F3F3F3;
 $green:#0A8D6D;
 
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-desktop-large: 1440px;
+
+
 
 /* HEADER */
 
@@ -23,3 +29,13 @@ $logo-width: 160px;
 
 /* icône flèche retour en arrière */
 $back-icon-size: 20px;
+
+
+
+/* RESTAURANT */
+
+// URL Photos
+$img-aLaFrancaise: "../images/restaurants/a-la-francaise.jpg";
+$img-laNoteEnchantee: "../images/restaurants/la-note-enchantee.jpg";
+$img-laPaletteDuGout: "../images/restaurants/la-palette-du-gout.jpg";
+$img-leDeliceDesSens: "../images/restaurants/le-delice-des-sens.jpg";
