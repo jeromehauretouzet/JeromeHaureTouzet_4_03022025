@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ohmyfood | Nos restaurants d'exception</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <!-- header contient le lien retour et le logo -->
+      <header>
+        <a href="index.html">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <img
+          src="images/logo/ohmyfood.svg"
+          alt="Ohmyfood, réservation de menus gastronomiques"
+        />
+      </header>
+
+      <!-- main contient main-photo et main-menu -->
+      <main>
+        <!-- =====  main-photo  ===== -->
+        <div id="img-leDeliceDesSens" class="main-photo"></div>
+
+        <!-- =====  main-menu  ===== -->
+        <!-- main-menu contient un flexContainer, main-starter, main-order -->
+        <div id="main-menu">
+          <!-- flexContainer contient  le titre du restaurant et un lien coeur -->
+          <div class="flexContainer">
+            <h1>Le délice des sens</h1>
+            <a href="#">
+              <div class="heart">
+                <span class="icon">
+                  <i class="fas fa-heart fa-1x icon-hover"></i>
+                </span>
+                <span class="icon">
+                  <i class="far fa-heart fa-1x icon-default"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- section main-starter contient: -->
+          <!-- un titre h2 pour les entrées  et une liste des entrées -->
+          <!-- un titre h2 pour les plats    et une liste des plats -->
+          <!-- un titre h2 pour les desserts et une liste des desserts -->
+
+          <!-- liste des entrées contient un lien -->
+          <!-- lien contient une carte menu -->
+          <!-- carte menu contient menu et le check -->
+          <!-- menu contient un h3 et un flexcontainer  -->
+          <!-- flexcontainer contient la description et le prix  -->
+          <!-- check contient une icone de validation  -->
+
+          <section id="main-starter">
+            <h2>ENTRÉES</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="cardMenu">
+                    <div class="menu">
+                      <h3>Tartare de thon</h3>
+                      <div class="flexcontainer">
+                        <span class="description">Assaisonné au yuzu</span>
+                        <span class="price">25€</span>
+                      </div>
+                    </div>
+                    <div class="check">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="cardMenu">
+                    <div class="menu">
+                      <h3>Bouchée de homard croustillant</h3>
+                      <div class="flexcontainer">
+                        <span class="description"
+                          >Et sa farandole de petits légumes
+                        </span>
+                        <span class="price">35€</span>
+                      </div>
+                    </div>
+                    <div class="check">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="cardMenu">
+                    <div class="menu">
+                      <h3>Poulet rôti aux herbes de Provence</h3>
+                      <div class="flexcontainer">
+                        <span class="description">Et sa crème de truffe</span>
+                        <span class="price">40€</span>
+                      </div>
+                    </div>
+                    <div class="check">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <h2>PLATS</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="cardMenu">
+                    <div class="menu">
+                      <h3>Poulet rôti aux herbes de Provence</h3>
+                      <div class="flexcontainer">
+                        <span class="description">Et sa crème de truffe</span>
+                        <span class="price">40€</span>
+                      </div>
+                    </div>
+                    <div class="check">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="cardMenu">
+                    <div class="menu">
+                      <h3>Langouste rôtie</h3>
+                      <div class="flexcontainer">
+                        <span class="description"
+                          >Et ses légumes de saison</span
+                        >
+                        <span class="price">35€</span>
+                      </div>
+                    </div>
+                    <div class="check">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="cardMenu">
+                    <div class="menu">
+                      <h3>Côte de boeuf Angus</h3>
+                      <div class="flexcontainer">
+                        <span class="description">Et sa purée de panais</span>
+                        <span class="price">44€</span>
+                      </div>
+                    </div>
+                    <div class="check">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <h2>DESSERTS</h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <div class="cardMenu">
+                    <div class="menu">
+                      <h3>farandole de desserts</h3>
+                      <div class="flexcontainer">
+                        <span class="description">Du chef</span>
+                        <span class="price">18€</span>
+                      </div>
+                    </div>
+                    <div class="check">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="cardMenu">
+                    <div class="menu">
+                      <h3>Crème brulée</h3>
+                      <div class="flexcontainer">
+                        <span class="description">Revisitée</span>
+                        <span class="price">22€</span>
+                      </div>
+                    </div>
+                    <div class="check">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="cardMenu">
+                    <div class="menu">
+                      <h3>Tiramisu</h3>
+                      <div class="flexcontainer">
+                        <span class="description">A la noisette</span>
+                        <span class="price">23€</span>
+                      </div>
+                    </div>
+                    <div class="check">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- =====  main-order  ===== -->
+          <!-- main-order contient un bouton commander -->
+
+          <div id="main-order">
+            <button id="btnOrder" class="colorGradient">Commander</button>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <!-- footer contient un titre et une liste -->
+        <!-- liste contient les icônes et leur lien -->
+        <h3>ohmyfood</h3>
+        <ul>
+          <li>
+            <i class="fas fa-utensils"></i>
+            <a href="#">Proposer un restaurant</a>
+          </li>
+          <li>
+            <i class="fas fa-hands-helping"></i>
+            <a href="#">Devenir partenaire</a>
+          </li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
