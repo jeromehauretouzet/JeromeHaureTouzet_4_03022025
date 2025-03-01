@@ -28,6 +28,34 @@
   }
 }
 
+/* section de recherche d'un restaurant */
+
+.search-container {
+  text-align: center;
+  margin-top: 8px;
+  background-color: $grey-superlight;
+
+  // titre principal
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 35px;
+    margin-left: 42px;
+    margin-right: 58px;
+  }
+
+  // titre secondaire
+  h2 {
+    text-align: center;
+    font-weight: 300;
+    margin-top: 10px;
+    padding-left: 30px;
+    padding-right: 20px;
+    font-size: 18px;
+  }
+}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
