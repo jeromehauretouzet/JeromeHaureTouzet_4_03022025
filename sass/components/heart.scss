@@ -2,35 +2,35 @@
   position: relative;
 
   .icon {
-    position: absolute;
-    transform: translate(-50%, -50%);
+    position: absolute;                    /* Positionnement absolu pour superposer les deux icônes (par défaut et survol) */
+    transform: translate(-50%, -50%);      /* Centre parfaitement l'icône par rapport à son parent */
 
     .icon-default {
-      transition: all 0.7s ease-in;
-      opacity: 1;
-      font-size: 24px; // Taille de base de l'icône
+      transition: all 0.7s ease-in;        /* Transition pour l'icône par défaut (changement d'opacité) */
+      opacity: 1;                          /* Initialement visible */
+      font-size: 24px;                     /* Taille de base de l'icône */
     }
 
     .icon-hover {
-      display: initial;
-      transition: all 0.6s ease-in;
+      display: initial;                   /* Affiche l'icône au survol (nécessaire pour la transition) */
+      transition: all 0.6s ease-in;       /* Transition pour l'icône au survol (changement d'opacité et de taille) */
       background: linear-gradient(50deg, $secondary-color, $primary-color);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       opacity: 0;
-      font-size: 0.05rem; // Taille initiale invisible
+      font-size: 0.05rem;                /* Taille initiale invisible */
     }
   }
 
   &:hover {
     .icon {
       .icon-default {
-        opacity: 0;
+        opacity: 0;                      /* Cache l'icône par défaut au survol */
       }
 
       .icon-hover {
-        opacity: 1;
-        font-size: 24px; // Taille au survol
+        opacity: 1;                     /* Affiche l'icône au survol */
+        font-size: 24px;                /* Taille au survol */
       }
     }
   }

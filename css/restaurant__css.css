@@ -1,0 +1,424 @@
+/****** General ***********/
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --main-color: #9356DC;
+  --main-bg-color: #F6F6F6;
+  --second-color:#FF79DA;
+  --new-bg-color: #99E2D0;
+}
+
+.primary-color {
+color: var(--main-color);
+}
+
+.grey {
+color: #7E7E7E;
+}
+
+.bg-greyLight {
+background-color: #EAEAEA;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+padding: 0px;
+list-style-type: none;
+}
+
+h1{
+margin: 0px;
+}
+
+/* Mobile First (mobil, less than 768px) */
+.main-container {
+  width: 100%;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Blanc par défaut pour mobile */
+}
+
+/* ===== header          ===== */
+
+header {
+  display: flex;
+  align-items: center;
+  padding-left: 17px;
+}
+
+/* lien retour */
+header i {
+  font-size: 20px;
+}
+
+/* logo */
+header img {
+margin-left: 58px;
+width: 160px;
+padding-top: 20px;
+padding-bottom: 10px;
+}
+
+/* ===== main-photo     ===== */
+
+/* photo du restaurant */
+#img-aLaFrancaise {
+  background-image: url("../images/restaurants/a-la-francaise.jpg");
+}
+
+#img-laNoteEnchantee {
+  background-image: url("../images/restaurants/la-note-enchantee.jpg");
+}
+
+#img-laPaletteDuGout {
+  background-image: url("../images/restaurants/la-palette-du-gout.jpg");
+}
+
+#img-leDeliceDesSens {
+  background-image: url("../images/restaurants/le-delice-des-sens.jpg");
+}
+
+/* emplacement de la photo du restaurant */
+.main-photo {
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 44%;
+  background-repeat: no-repeat;
+}
+
+/* =====  main-menu  ===== */
+
+/* menu du restaurant */
+#main-menu {
+  background-color: #F6F6F6;
+  border-radius: 30px 30px 0 0;
+  padding-left: 17px;
+  padding-right: 17px;
+  margin-top: -30px;
+}
+
+/* flexcontainer (titre et coeur) */
+#main-menu .flexContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* titre du restaurant*/
+#main-menu h1 {
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin-top: 10px;
+  margin-right: auto;
+}
+
+/* lien du coeur */
+#main-menu a {
+  position: relative;
+  padding-top: 20px;
+  margin-top: 10px;
+  margin-right: 60px;
+}
+
+/* coeur */
+#main-menu .flexContainer a:hover .icon .icon-default {
+  opacity: 0;
+}
+
+/* coeur au survol */
+#main-menu .flexContainer a:hover .icon .icon-hover {
+  opacity: 1;
+  font-size: 24px;
+}
+
+/* animation du coeur (superposition) */
+#main-menu .flexContainer a .icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* animation du coeur (vide) */
+#main-menu .flexContainer a .icon-default {
+  transition: all 0.7s ease-in;
+  opacity: 1;
+  font-size: 24px;
+}
+
+/* animation du coeur (rempli) */
+#main-menu .flexContainer a .icon-hover {
+  display: initial;
+  transition: all .6s ease-in;
+  background: linear-gradient(50deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  font-size: 0.05rem;
+}
+
+/****** main-starter ***********/
+
+/* titre secondaire du menu */
+#main-starter h2 {
+  font-size: 16px;
+  font-weight: 300;
+  width: 38px;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+  margin-top: 35px;
+}
+
+/* carte du menu */
+#main-starter a .cardMenu {
+  display: flex;
+  width: 100%;
+  height: 68px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 1px 2px 5px #c2c2c2;
+}
+
+/* menu */
+#main-menu a .cardMenu .menu {
+  width: 100%;
+}
+
+/* titre du plat */
+#main-menu a .cardMenu .menu h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0px;
+  padding-top: 13.5px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+}
+
+/* flexcontainer (description et prix) */
+#main-menu a .cardMenu .menu .flexcontainer {
+  display: flex;
+  padding-left: 10px;
+}
+
+/* flexcontainer (description et prix) */
+#main-menu a .cardMenu .menu .flexcontainer .description {
+  font-weight: 300;
+  font-size: 15px;
+  margin-right: auto;
+
+  /* gestion du dépassement de la description avec des points de suspension.  */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* prix */
+#main-menu a .cardMenu .menu .flexcontainer .price {
+  font-size: 15px;
+  color: #353535;
+  font-weight: 700;
+  margin-right: 20px;
+  padding-bottom: 5px;
+}
+
+/* check de validation */
+#main-menu a .cardMenu .check {
+  display: flex;
+  background-color: #99E2D0;
+  color: white;
+  border-radius: 0 12px 12px 0;
+  border: none;
+  width: 0%;
+  max-width: 90px;
+  height: 68px;
+
+  transition: all 0.5s ease-in-out;
+}
+
+/* icone du check de validation */
+#main-menu a .cardMenu .check i {
+  margin: auto;
+  font-size: 22px;
+  padding-top: 5px;
+}
+
+#main-menu a:hover .cardMenu .check {
+  width: 20%;
+  min-width: 59px;
+}
+
+/* animation progressive du menu en fondu avec un léger décalage dans le temps */
+#main-menu li {
+  animation: fadeIn 0.5s linear;
+  animation-fill-mode: both;
+}
+
+#main-menu li:nth-child(1) {
+  animation-delay: 0.25s;
+}
+
+#main-menu li:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+#main-menu li:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+#main-menu li:nth-child(4) {
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* =====  main-order  ===== */
+
+#main-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* bouton commander */
+#btnOrder {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  width: 180px;
+  height: 50px;
+  background: linear-gradient(-8deg, #9356DC, #FF79DA);
+  cursor: pointer;
+  transition: all ease-in  0.3s;
+  margin-bottom: 40px;
+}
+
+/* bouton commander (survol)*/
+#btnOrder:hover {
+  opacity: 0.85;
+  box-shadow: 1px 2px 5px grey;
+}
+
+#btnOrder:focus {
+  outline: none;
+}
+
+/* ===== footer          ===== */
+footer {
+background-color: #353535;
+padding-bottom: 20px;
+padding-left: 25px;
+}
+
+footer h3 {
+font-family: Shrikhand;
+color: white;
+font-weight: 100;
+font-size: 20px;
+margin: 0px;
+padding-top: 20px;
+padding-bottom: 10px;
+}
+
+footer ul {
+display: flex;
+flex-direction: column;
+margin: 0px;
+}
+
+footer ul li {
+padding-top: 4px;
+padding-bottom: 4px;
+}
+
+footer ul li i {
+font-size: 13px;
+color: white;
+padding-right: 5px;
+}
+
+footer ul li a {
+color: white;
+font-size: 16px;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  header img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* footer */
+  footer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 57px;
+  }
+
+  footer ul {
+    flex-direction: row;
+  }
+  
+  footer ul li {
+    margin-right: 19px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  footer h3 {
+    margin-left: 15px;
+    margin-right: 25px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  #main-menu {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+}
+
+/* Desktop more than 1440px */
+@media (min-width: 1440px) {
+  .main-container {
+    max-width: 1440px;
+    padding: 0 50px;
+  }
+
+  #main-menu {
+    padding-left: 210px;
+    padding-right: 210px;
+  }
+}

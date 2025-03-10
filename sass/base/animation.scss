@@ -1,24 +1,24 @@
 /* animation 1: preload de 1 à 3sec quand on arrive sur la page d'accueil, couvrir l'intégralité de l'écran */
 body .preload {
-  animation: splash-screen 3s, fade-in 1s 2s;
-  width: 100vw;
+  animation: splash-screen 3s, fade-in 1s 2s;     /* 2 anim */
+  width: 100vw;                                   /* Couvre toute la fenêtre */
   height: 100vh;
   background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
-  visibility: hidden;
-  opacity: 1;
+  visibility: hidden;                             /* Initialement caché */
+  opacity: 1;                                     /* Opacité initiale à 1 (sera modifiée par l'animation fade-in)*/
 
   .loadingSpinner {
     width: 142px;
     height: 40px;
     background: white;
-    position: absolute;
+    position: absolute;                           /* coin supérieur gauche de l'élément au centre de son parent */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);             /* centrage parfait */
     filter: contrast(20);
 
     .dot {
@@ -27,14 +27,14 @@ body .preload {
       height: 16px;
       top: 12px;
       left: 15px;
-      filter: blur(4px);
+      filter: blur(4px);                          /* effet de flou */
       background: $primary-color;
       border-radius: 50%;
       animation-name: anim-dot;
-      animation-duration: 1.5s;
-      animation-iteration-count: 2;
+      animation-duration: 1.5s;                   /* chaque cycle dure 1.5 secondes */
+      animation-iteration-count: 2;               /* animation répété 2 fois */
       animation-direction: alternate;
-      animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;     /* départ lent, une accélération au milieu, et un ralentissement à la fin */
     }
 
     .dots {
@@ -52,7 +52,7 @@ body .preload {
         width: 16px;
         height: 16px;
         margin-left: 16px;
-        filter: blur(4px);
+        filter: blur(4px);                        /* effet de flou */
         background: $primary-color;
         border-radius: 50%;
       }
@@ -66,13 +66,13 @@ body .preload {
   }
 
   100% {
-    opacity: 0;
+    opacity: 0;                                  /* À la fin de l'animation : L'opacité est à 0 (complètement transparent). */
   }
 }
 
 @keyframes splash-screen {
   50% {
-    visibility: visible;
+    visibility: visible;                        /* À 50% de la durée de l'animation: Rend l'élément visible. */
   }
 
   100% {
@@ -82,13 +82,13 @@ body .preload {
 
 @keyframes anim-dot {
   50% {
-    transform: translateX(96px);
+    transform: translateX(96px);                /* À 0.5 seconde (50%), le point est déplacé de 96 pixels vers la droite */
   }
 }
 
 @keyframes anim-dots {
   50% {
-    transform: translateX(-31px);
+    transform: translateX(-31px);               /* À 0.5 seconde (50%), les points sont déplacé de 31 pixels vers la gauche */
   }
 }
 
@@ -96,9 +96,10 @@ body .preload {
 /* animation 2: progressive du menu en fondu avec un léger décalage dans le temps */
 #main-menu {
   li {
-    animation: fadeIn 0.5s linear;
-    animation-fill-mode: both;
+    animation: fadeIn 0.5s linear;              /* durée 0.5 sec */
+    animation-fill-mode: both;                  /* Conserve l'état de l'animation (début ou fin) */
 
+    /* Délai progressif pour chaque élément */
     &:nth-child(1) {
       animation-delay: 0.25s;
     }
@@ -139,7 +140,7 @@ body .preload {
     .cardMenu {
       /* check de validation (vert)*/
       .check {
-        transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;  /* effet de déplacement de droite à gauche (width: 0% à 20 % lors du hover)*/
       }
     }
   }
